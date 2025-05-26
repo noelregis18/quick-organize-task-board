@@ -1,73 +1,115 @@
-# Welcome to your Lovable project
 
-## Project info
+# Todo List App
 
-**URL**: https://lovable.dev/projects/81819c36-5341-4479-bdd9-590f3a716837
+A modern, responsive todo list application built with React, TypeScript, and Tailwind CSS. This app helps you stay organized and manage your daily tasks efficiently.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- ✅ **Add Tasks**: Easily add new tasks with a clean input interface
+- ✏️ **Edit Tasks**: Click on any task to edit it inline
+- ✅ **Mark Complete**: Toggle tasks between active and completed states
+- 🗑️ **Delete Tasks**: Remove tasks you no longer need
+- 🔍 **Filter Tasks**: View all, active, or completed tasks
+- 📊 **Task Statistics**: See your progress with total, active, and completed counts
+- 💾 **Local Storage**: Your tasks are automatically saved and persist between sessions
+- 🎨 **Modern Design**: Beautiful gradient backgrounds and smooth animations
+- 📱 **Responsive**: Works perfectly on desktop, tablet, and mobile devices
 
-**Use Lovable**
+## Technologies Used
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/81819c36-5341-4479-bdd9-590f3a716837) and start prompting.
+- **React 18** - Modern React with hooks
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first CSS framework
+- **Vite** - Fast build tool and development server
+- **Lucide React** - Beautiful icon library
+- **Local Storage API** - Client-side data persistence
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js (version 14 or higher)
+- npm or yarn package manager
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd todo-list-app
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. Install dependencies:
+```bash
+npm install
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open your browser and navigate to `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Project Structure
 
-**Use GitHub Codespaces**
+```
+src/
+├── components/
+│   ├── TodoApp.tsx      # Main application component
+│   ├── TodoForm.tsx     # Form for adding new tasks
+│   └── TodoItem.tsx     # Individual task item component
+├── pages/
+│   └── Index.tsx        # Main page component
+├── App.tsx              # Root application component
+├── main.tsx            # Application entry point
+└── index.css           # Global styles and Tailwind imports
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Usage
 
-## What technologies are used for this project?
+### Adding a Task
+1. Type your task in the input field
+2. Click the "Add" button or press Enter
+3. Your task will appear in the list below
 
-This project is built with:
+### Managing Tasks
+- **Complete**: Click the circle button next to a task to mark it as complete
+- **Edit**: Click on the task text to edit it inline
+- **Delete**: Click the trash icon to remove a task
+- **Filter**: Use the filter buttons (All, Active, Completed) to view specific task types
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Data Persistence
+All your tasks are automatically saved to your browser's local storage, so they'll be there when you return to the app.
 
-## How can I deploy this project?
+## Customization
 
-Simply open [Lovable](https://lovable.dev/projects/81819c36-5341-4479-bdd9-590f3a716837) and click on Share -> Publish.
+The app uses Tailwind CSS for styling, making it easy to customize:
 
-## Can I connect a custom domain to my Lovable project?
+- **Colors**: Modify the gradient backgrounds and accent colors in the component files
+- **Animations**: Adjust the fade-in animations and transitions
+- **Layout**: Change spacing, sizing, and responsive breakpoints
 
-Yes, you can!
+## Browser Compatibility
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+This app works in all modern browsers including:
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Contributing
+
+Feel free to submit issues and enhancement requests!
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Author
+
+**Designed and Developed by Noel Regis**
+
+---
+
+Built with ❤️ using React and TypeScript

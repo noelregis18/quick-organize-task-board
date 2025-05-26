@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { TodoForm } from './TodoForm';
 import { TodoItem } from './TodoItem';
@@ -168,7 +167,7 @@ export const TodoApp = () => {
 
         {/* Clear Completed Button */}
         {completedCount > 0 && (
-          <div className="text-center animate-fade-in">
+          <div className="text-center mb-8 animate-fade-in">
             <button
               onClick={clearCompleted}
               className="px-6 py-3 bg-red-500 hover:bg-red-600 text-white rounded-full font-medium transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
@@ -177,6 +176,13 @@ export const TodoApp = () => {
             </button>
           </div>
         )}
+
+        {/* Footer */}
+        <footer className="text-center py-6 mt-8 border-t border-gray-200 animate-fade-in">
+          <p className="text-gray-600 text-sm">
+            Designed and Developed by <span className="font-semibold text-gray-800">Noel Regis</span>
+          </p>
+        </footer>
       </div>
     </div>
   );
